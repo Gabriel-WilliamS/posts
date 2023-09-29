@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Post</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html"> JW FashionBlog </a></h1>
+      <nav>
+        <ul>
+          <li class="logged-user"></li>
+          <li class="login-button"><a href="login.html">SignIn</a></li>
+          <li><a href="register.html">SignUp</a></li>
+          <li class="logout-button"><button>Logout</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="post-page">
+      <div class="main-post">
+
+      </div>
+      <div class="comments-container">
+        <div>
+          <textarea name="comment-user" id="comment-user"></textarea>
+          <button>
+            Comment
+          </button>
+        </div>
+      </div>
+      <div class="comments">
+        <h2>Comments</h2>
+    </section>
+  </body>
+  <script type="module" src="./index.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+  <script type="module" src="/post.js"></script>
+</html>
